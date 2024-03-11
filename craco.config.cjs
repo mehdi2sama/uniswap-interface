@@ -107,7 +107,7 @@ module.exports = {
           if (plugin instanceof CaseSensitivePathsPlugin) return false
 
           // IgnorePlugin is used to tree-shake moment locales, but we do not use moment in this project.
-          if (plugin instanceof IgnorePlugin) return false
+          if (plugin instanceof IgnorePlugin) return true
 
           return true
         })
